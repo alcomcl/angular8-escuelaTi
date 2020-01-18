@@ -3,14 +3,28 @@
 <h2>{{ name }}</h2>
 
 <button (click)="changeTitle()">Change Title</button>
-<button (click)="changeName()">Change Name</button>
-<input type="text" [(ngModel)]="rockBandName" (keydown.enter)="addRockBand()">
-<button (click)="addRockBand()">Add</button>
+<button (click)="changeName()">Change Name</button><br><br>
+<input type="text" [(ngModel)]="rockBandName" (keydown.enter)="addRockBand()"><br>
+<button (click)="addRockBand()">Add Banda de Rock</button>
+<button (click)="empty()">Vaciar coleccion</button>
+<h3>{{ rockBandName }}</h3><br>
+
 
 <!--*ngFor-->
 <ul>
   <!--Iterar una lista de forma dinamica-->
+  <li *ngIf="rockBands.length === 0">
+    No hay nada para mostrar
+  </li>
   <li *ngFor="let rock of rockBands">
       {{ rock }}
   </li>
 </ul>
+
+<div *ngIf="rockBandName === 'Alex'"> 
+  Se ingreso Alex
+</div>
+
+<div *ngIf="rockBandName === 'Nataly'"> 
+  Se ingreso Nataly
+</div>

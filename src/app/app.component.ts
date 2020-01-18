@@ -34,5 +34,9 @@ export class AppComponent {
     this.rockBandName = '';
   }
 
+  empty() {
+    this.rockBands = [];
+  }
+
 
 }
