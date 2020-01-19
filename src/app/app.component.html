@@ -50,3 +50,6 @@
     
   </li>
 </ul>
+
+<!--[product]="product" : Desde el container se recive la variable product que espera por la data. Se iguala a la variable iteradora del For-->
+<app-product [product]="product" *ngFor="let product of products"></app-product>

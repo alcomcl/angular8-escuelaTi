@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+
+import { Product } from './models/product.model';
+
+// En este caso AppComponent se comportará como un Container. Enviará esta info a los componentes
 
 interface User{
   name: string;
@@ -16,7 +19,7 @@ interface User{
 export class AppComponent {
   public title = 'Primera Clase';
   public name = 'Alex Cofré';
-  public rockBandName: string = '';
+  public rockBandName: '';
   public rockBands: string[] = ['Los Prisioneros', 'Los Cadilacs', 'Git'];
   public users: User[] = [
     {
@@ -31,7 +34,22 @@ export class AppComponent {
       isSingle: true,
       avatar: 'assets/images/img1.jpg'
     }
-  ]
+  ];
+
+  products: Product[] = [
+    {
+      title: 'Producto 1',
+      price: 200,
+      text: 'Super breakfast',
+      image: 'assets/images/img2.jpg',
+    },
+    {
+      title: 'Producto 2',
+      price: 260,
+      text: 'Super breakfast super',
+      image: 'assets/images/img2.jpg',
+    }
+  ];
 
 
   changeTitle() {
