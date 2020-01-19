@@ -1,6 +1,13 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+interface User{
+  name: string;
+  age: number;
+  isSingle: boolean;
+  avatar: string;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,6 +18,20 @@ export class AppComponent {
   public name = 'Alex Cofré';
   public rockBandName: string = '';
   public rockBands: string[] = ['Los Prisioneros', 'Los Cadilacs', 'Git'];
+  public users: User[] = [
+    {
+      name: 'Alex',
+      age: 32,
+      isSingle: false,
+      avatar: 'assets/images/img1.jpg'
+    },
+    {
+      name: 'Nataly',
+      age: 29,
+      isSingle: true,
+      avatar: 'assets/images/img1.jpg'
+    }
+  ]
 
 
   changeTitle() {
@@ -38,5 +59,12 @@ export class AppComponent {
     this.rockBands = [];
   }
 
+  deleteItem(index: number){
+    this.rockBands.splice(index, 1)  // eliminamos solo un item
+  }
+
+  updateItem(index: number) {
+    this.rockBands[index] = 'Se actualizo';
+  }
 
 }

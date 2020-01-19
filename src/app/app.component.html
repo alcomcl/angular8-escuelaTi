@@ -16,8 +16,10 @@
   <li *ngIf="rockBands.length === 0">
     No hay nada para mostrar
   </li>
-  <li *ngFor="let rock of rockBands">
-      {{ rock }}
+  <li *ngFor="let rock of rockBands; index as i">
+    {{ i + 1 }} - {{ rock }} 
+    <button (click)="deleteItem(i)">Borrar Item</button>
+    <button (click)="updateItem(i)">Editar</button>
   </li>
 </ul>
 
@@ -36,3 +38,15 @@
 <p *ngSwitchCase="'Ruben'">Se ingreso Ruben</p>
 <p *ngSwitchDefault>No hubo coincidencias para NgSwitch</p>
 </div>
+
+<ul>
+  <li *ngFor="let user of users"><br>
+    <div *ngIf="user.isSingle === true" class="avatar">
+      Nombre: {{ user.name }}
+      Edad: {{ user.age }}
+      Soltero: {{ user.isSingle ? 'Si' : 'No'}}
+      Imagen: <img [src]="user.avatar" alt="">
+    </div>
+    
+  </li>
+</ul>
