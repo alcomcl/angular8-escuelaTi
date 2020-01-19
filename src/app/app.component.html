@@ -28,3 +28,11 @@
 <div *ngIf="rockBandName === 'Nataly'"> 
   Se ingreso Nataly
 </div>
+
+<!--NgSwitch-->
+<div [ngSwitch]="rockBandName">
+<p *ngSwitchCase="'Carlos'">Se ingreso Carlos</p>
+<p *ngSwitchCase="'Marcos'">Se ingreso Marcos</p>
+<p *ngSwitchCase="'Ruben'">Se ingreso Ruben</p>
+<p *ngSwitchDefault>No hubo coincidencias para NgSwitch</p>
+</div>
