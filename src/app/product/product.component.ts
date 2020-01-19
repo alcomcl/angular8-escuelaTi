@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { Product } from './../models/product.model';
 
@@ -11,5 +11,10 @@ import { Product } from './../models/product.model';
 export class ProductComponent {   
    
     @Input() product: Product; // -> De esta manera, este componente esperará la data de tipo Producto enviada desde el container.
+    @Output() clickedProduct = new EventEmitter<number>()
 
+    viewDetail() {
+        console.log('viewDetail', this.product.id);
+        this.clickedProduct.emit(this.product.id);
+    }
 }

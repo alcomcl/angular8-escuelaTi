@@ -2,5 +2,6 @@
     Se iguala a la variable iteradora del For-->
 <app-product 
     [product]="product" 
+    (clickedProduct)="onClickedProduct($event)"
     *ngFor="let product of products">
 </app-product>
