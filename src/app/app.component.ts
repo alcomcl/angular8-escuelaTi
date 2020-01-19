@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Product } from './models/product.model';
+
 
 // En este caso AppComponent se comportará como un Container. Enviará esta info a los componentes
 
@@ -35,22 +35,6 @@ export class AppComponent {
       avatar: 'assets/images/img1.jpg'
     }
   ];
-
-  products: Product[] = [
-    {
-      title: 'Producto 1',
-      price: 200,
-      text: 'Super breakfast',
-      image: 'assets/images/img2.jpg',
-    },
-    {
-      title: 'Producto 2',
-      price: 260,
-      text: 'Super breakfast super',
-      image: 'assets/images/img2.jpg',
-    }
-  ];
-
 
   changeTitle() {
     if (this.title === 'Primera Clase') {

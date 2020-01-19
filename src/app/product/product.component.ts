@@ -3,8 +3,9 @@ import { Component, Input } from '@angular/core';
 import { Product } from './../models/product.model';
 
 @Component({
+ styleUrls: ['./product.component.scss'],
  selector: 'app-product',
- templateUrl: './product.component.html'
+ templateUrl: './product.component.html' 
 })
 
 export class ProductComponent {   
