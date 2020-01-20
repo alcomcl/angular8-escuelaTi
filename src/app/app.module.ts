@@ -11,6 +11,7 @@ import { DateFormatPipe } from './date-format.pipe';
 import { ListComponent } from './components/list/list.component';
 import { FibonacciPipe } from './pipes/fibonacci.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
+import { UsersListComponent } from './components/users-list/users-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HighlightDirective } from './directives/highlight.directive';
     DateFormatPipe,
     ListComponent,
     FibonacciPipe,
-    HighlightDirective
+    HighlightDirective,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,
