@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-
-
 // En este caso AppComponent se comportará como un Container. Enviará esta info a los componentes
 
 interface User{

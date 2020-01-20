@@ -10,6 +10,7 @@ import { ReversePipe } from './reverse.pipe';
 import { DateFormatPipe } from './date-format.pipe';
 import { ListComponent } from './components/list/list.component';
 import { FibonacciPipe } from './pipes/fibonacci.pipe';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FibonacciPipe } from './pipes/fibonacci.pipe';
     ReversePipe,
     DateFormatPipe,
     ListComponent,
-    FibonacciPipe
+    FibonacciPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
