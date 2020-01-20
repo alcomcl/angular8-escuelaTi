@@ -11,7 +11,9 @@ import { Product } from './../models/product.model';
 export class ProductComponent {   
    
     @Input() product: Product; // -> De esta manera, este componente esperará la data de tipo Producto enviada desde el container.
-    @Output() clickedProduct = new EventEmitter<number>()
+    @Output() clickedProduct = new EventEmitter<number>();
+
+    today = new Date();
 
     viewDetail() {
         console.log('viewDetail', this.product.id);
