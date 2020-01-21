@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 //Importamos el modelo para poder tipar la consulta a la Api
-import { Todo } from './../models/todo.models';
+import { Todo } from '../models/todo.models';
 
 @Injectable({
   providedIn: 'root'

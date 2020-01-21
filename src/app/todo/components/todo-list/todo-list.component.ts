@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 // Inyectamos el servicio
-import { TodoService } from '../../../services/todo.service';
+import { TodoService } from '../../services/todo.service';
 // Importamos el modelo Todo
-import { Todo } from './node_modules/src/app/todo/models/todo.models';
+import { Todo } from 'src/app/todo/models/todo.models';
 
 @Component({
   selector: 'app-todo-list',

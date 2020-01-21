@@ -13,8 +13,8 @@ import { ListComponent } from './components/list/list.component';
 import { FibonacciPipe } from './pipes/fibonacci.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
 import { UsersListComponent } from './components/users-list/users-list.component';
-import { TodoListComponent } from './components/todo-list/todo-list.component';
-import { TodoComponent } from './components/todo/todo.component';
+import { TodoListComponent } from './todo/components/todo-list/todo-list.component';
+import { TodoComponent } from './todo/components/todo/todo.component';
 
 @NgModule({
   declarations: [
