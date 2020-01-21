@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { ProductComponent } from './product/product.component';
+import { ProductComponent } from './products/components/product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ReversePipe } from './reverse.pipe';
 import { DateFormatPipe } from './date-format.pipe';
