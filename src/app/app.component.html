@@ -2,7 +2,7 @@
 <h1>{{ title }}</h1>
 <h2>{{ name }}</h2>
 
-<button (click)="changeTitle()">Change Title</button>
+<!-- <button (click)="changeTitle()">Change Title</button> -->
 <button (click)="changeName()">Change Name</button><br><br>
 <input type="text" [(ngModel)]="rockBandName" (keydown.enter)="addRockBand()"><br>
 <button (click)="addRockBand()">Add Banda de Rock</button>
@@ -56,5 +56,7 @@
 <app-list></app-list> -->
 
 <app-users-list></app-users-list>
+
+<app-todo-list></app-todo-list>
 
 
