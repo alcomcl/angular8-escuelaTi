@@ -36,19 +36,35 @@ export class TodoListComponent implements OnInit {
     this.todoService.createTodo(newTodo)
     .subscribe(
       todo => {
-      console.log(todo);
+      // console.log(todo);
+      // Si la peticion es correcta, agegamos la tarea al array todos[]
+      this.todos.unshift(todo); // agregamos la tarea al principio del array
     },
     error => {
       console.log(error);
     });
   }
 
-  updateTodo() {
-
+  onDeleteTodo(todoId: string, index: number) {
+    console.log(todoId, index) // Para debuguear
+    this.todoService.deleteTodo(todoId)
+    .subscribe(response => {
+      //console.log(response);
+      this.todos.splice(index,1); // Eliminamos segun indice que llega por parametro
+    },
+    error => {
+      console.log(error);
+    });
   }
 
-  onDeleteTodo(todoId: string) {
-    console.log(todoId);
+  onUpdateTodo(todo: Todo, index: number) {
+    this.todoService.updateTodo(todo)
+    .subscribe( response => {
+      this.todos[index] = response;
+    },
+    error => {
+      console.log(error);
+    });
   }
 
 }
