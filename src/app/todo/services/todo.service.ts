@@ -4,9 +4,7 @@ import { HttpClient } from '@angular/common/http';
 //Importamos el modelo para poder tipar la consulta a la Api
 import { Todo } from '../models/todo.models';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class TodoService {
 
   public path: string = 'https://jsonplaceholder.typicode.com/todos';

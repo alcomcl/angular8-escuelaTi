@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 // importamos el modelo Todo
-import { Todo } from '../../models/todo.models';
+import { Todo } from './../../models/todo.models';
 
 @Component({
   selector: 'app-todo',
