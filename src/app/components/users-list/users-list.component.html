@@ -1,1 +1,9 @@
-<p>users-list works!</p>
+<!-- <label>Ingresa la cantidad de usuarios a cargar desde la Api</label><br> -->
+<input type="number" [(ngModel)]="limit" (keydown.enter)="fetchUser()">
+
+<ul>
+    <li *ngFor="let user of users">
+        {{ user.email }}
+        <img [src]="user.picture.large" alt="">
+    </li>
+</ul>

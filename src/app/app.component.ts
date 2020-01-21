@@ -13,28 +13,28 @@ export class AppComponent {
   public name = 'Alex Cofré';
   public rockBandName: '';
   public rockBands: string[] = ['Los Prisioneros', 'Los Cadilacs', 'Git'];
-  public users: User[] = [
-    {
-      name: 'Alex',
-      age: 32,
-      isSingle: false,
-      avatar: 'assets/images/img1.jpg'
-    },
-    {
-      name: 'Nataly',
-      age: 29,
-      isSingle: true,
-      avatar: 'assets/images/img1.jpg'
-    }
-  ];
+  // public users: User[] = [
+  //   {
+  //     name: 'Alex',
+  //     age: 32,
+  //     isSingle: false,
+  //     avatar: 'assets/images/img1.jpg'
+  //   },
+  //   {
+  //     name: 'Nataly',
+  //     age: 29,
+  //     isSingle: true,
+  //     avatar: 'assets/images/img1.jpg'
+  //   }
+  // ];
 
-  changeTitle() {
-    if (this.title === 'Primera Clase') {
-      this.title = 'Hola Alex';
-    } else {
-      this.title = 'Primera Clase';
-    }
-  }
+  // changeTitle() {
+  //   if (this.title === 'Primera Clase') {
+  //     this.title = 'Hola Alex';
+  //   } else {
+  //     this.title = 'Primera Clase';
+  //   }
+  // }
 
   changeName() {
     if (this.name === 'Nataly'){

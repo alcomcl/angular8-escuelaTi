@@ -12,13 +12,21 @@ import { User } from './../../models/user.model';
 export class UsersListComponent implements OnInit {
 
   users: User[] = [];
+  limit: number;
 
   constructor(
     private usersSerices: UsersService
   ) { }
 
   ngOnInit() {
-    this.users = this.usersSerices.getAllUsers()
-  }
+    
+ }
 
-}
+ fetchUser() {
+    console.log(this.limit)
+    this.usersSerices.getAllUsers(this.limit).subscribe(users => {
+    this.users = users;
+  });
+ }
+
+} 
