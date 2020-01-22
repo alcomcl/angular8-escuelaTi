@@ -4,16 +4,14 @@ import { HttpClient } from '@angular/common/http';
 // Operator Map para transformar la llamada a la Api de usuarios
 import { map } from 'rxjs/operators';
 
-import { User } from './../models/user.model';
+import { User } from '../models/user.model';
 
 interface ResponseUsers {
   results: User[] ;
   info: any;
 }
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class UsersService {
 
   constructor(

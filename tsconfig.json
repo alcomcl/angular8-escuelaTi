@@ -18,7 +18,7 @@
       "es2018",
       "dom"
     ],
-    // "path": {
+    // "paths": {
     //   "@todo/*": ["src/app/todo/*"],
     //   "@core/*": ["src/app/core/*"],
     //   "@shared/*":["src/app/shared/*"]
